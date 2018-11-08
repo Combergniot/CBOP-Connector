@@ -1,54 +1,35 @@
-import okhttp3.*;
-
 import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.Proxy;
+import java.time.LocalDateTime;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class Main {
+public class Main extends Settings {
 
-    public static void main(String[] args) throws IOException {
+    private static final ScheduledExecutorService scheduler =
+            Executors.newSingleThreadScheduledExecutor();
 
-        int proxyPort = 8080;
-        String proxyHost = "localhost";
-        final String username = "username";
-        final String password = "password";
-//        Ustaw dane partnera w XML
+    public static void main(String[] args) {
+        Methods methods = new Methods();
 
-        Authenticator proxyAuthenticator = new Authenticator() {
-            @Override
-            public Request authenticate(Route route, Response response) throws IOException {
-                String credential = Credentials.basic(username, password);
-                return response
-                        .request()
-                        .newBuilder()
-                        .header("Proxy-Authorization", credential)
-                        .build();
+          System.out.println(LocalDateTime.now().format(formatter) +
+                ": Starting ten-hour countdown now...");
+
+        Runnable runnable = () -> {
+            System.out.println(LocalDateTime.now().format(formatter) +
+                    ": Out of time! Let's go!");
+
+            try {
+                methods.getResponse();
+//                    String answer = response.body().string();
+//                    BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Baza ofert\\CBOP_Output.txt"));
+//                    writer.write(answer);
+//                    writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         };
-
-        OkHttpClient.Builder builder = new OkHttpClient.Builder()
-                .connectTimeout(60, TimeUnit.SECONDS)
-                .writeTimeout(60, TimeUnit.SECONDS)
-                .readTimeout(60, TimeUnit.SECONDS)
-                .proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress(proxyHost, proxyPort)))
-                .proxyAuthenticator(proxyAuthenticator);
-        OkHttpClient client = builder.build();
-
-
-        MediaType mediaType = MediaType.parse("application/xml");
-        RequestBody body = RequestBody.create(mediaType, "<soapenv:Envelope xmlns:soapenv=\"" +
-                "http://schemas.xmlsoap.org/soap/envelope/\"\r\nxmlns:ofer=\"http://oferty.praca.gov.pl/oferta\">\r\n <soapenv:Header/>\r\n <soapenv:Body>\r\n <ofer:Dane>\r\n <pytanie>\r\n <Partner>test</Partner>\r\n <Kryterium>\r\n <Wszystkie>true</Wszystkie>\r\n </Kryterium>\r\n </pytanie>\r\n </ofer:Dane>\r\n </soapenv:Body>\r\n</soapenv:Envelope>");
-        Request request = new Request.Builder()
-                .url("http://oferty.praca.gov.pl/integration/services/oferta?wsdl=")
-                .post(body)
-                .addHeader("content-type", "application/xml")
-                .addHeader("cache-control", "no-cache")
-                .addHeader("postman-token", "7e4b8260-76bd-06b2-8d5f-5ac33d84f42f")
-                .build();
-
-        Response response = client.newCall(request).execute();
-        System.out.println(response.body().string());
+        scheduler.schedule(runnable, 10, TimeUnit.HOURS);
 
     }
 }
