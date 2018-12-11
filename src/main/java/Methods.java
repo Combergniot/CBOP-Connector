@@ -1,13 +1,17 @@
 import okhttp3.*;
+import okio.BufferedSink;
+import okio.Okio;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class Methods extends Settings {
 
-    protected Authenticator buildProxyAuthenticator() {
+    private Authenticator buildProxyAuthenticator() {
         Authenticator proxyAuthenticator = (route, response) -> {
             String credential = Credentials.basic(username, password);
             return response
@@ -19,7 +23,7 @@ public class Methods extends Settings {
         return proxyAuthenticator;
     }
 
-    protected OkHttpClient buildClient() {
+    private OkHttpClient buildClient() {
         OkHttpClient.Builder builder = new OkHttpClient.Builder()
                 .connectTimeout(60, TimeUnit.SECONDS)
                 .writeTimeout(60, TimeUnit.SECONDS)
@@ -30,7 +34,7 @@ public class Methods extends Settings {
         return client;
     }
 
-    protected Request buildRequest() {
+    private Request buildRequest() {
         Request request = new Request.Builder()
                 .url("http://oferty.praca.gov.pl/integration/services/oferta?wsdl=")
                 .post(createRequestBody())
@@ -41,8 +45,9 @@ public class Methods extends Settings {
         return request;
     }
 
-
-    protected RequestBody createRequestBody() {
+    //  TODO: 2018-12-11  Fill relevant data, eg. <Partner> and <Kryterium> tag.
+    //   See documentation on: https://www.dane.gov.pl/dataset/538/resource/8010
+    private RequestBody createRequestBody() {
         MediaType mediaType = MediaType.parse("application/xml");
         RequestBody body = RequestBody.create(mediaType,
                 "<soapenv:Envelope xmlns:soapenv=\"" +
@@ -63,11 +68,20 @@ public class Methods extends Settings {
         return body;
     }
 
-    protected Response getResponse() throws IOException {
+    protected Response callAndExecuteRequest() throws IOException {
         Response response = buildClient()
                 .newCall(buildRequest()).execute();
         return response;
 
     }
 
+    //    Set file path for downloaded files
+    protected void downloadResponseFile() throws IOException {
+        File downloadedFile = new File("C:\\Baza ofert\\", "CBOP");
+        BufferedSink sink = Okio.buffer(Okio.sink(downloadedFile));
+        sink.writeAll(Objects.requireNonNull(callAndExecuteRequest()
+                .body()
+                .source()));
+        sink.close();
+    }
 }
