@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5e6e4f-6c72-470d-8447-77cddcae1082" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Methods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8b5e6e4f-6c72-470d-8447-77cddcae1082" name="Default Changelist" comment="Corrections and comments">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dashboard/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dashboard/src/main/java/com/gus/dashboard/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dashboard/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Otomoto/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Otomoto/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Otomoto/.idea/vcs.xml" afterDir="false" />
@@ -18,24 +17,52 @@
       <change afterPath="$PROJECT_DIR$/../Otomoto/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Pytania rekrutacyjne/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Pytania rekrutacyjne/src/com/company/fib2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../R-integration/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../R-integration/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../R-integration/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Translations/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Translations/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Translations/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Translations/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/model/Definition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/data/DataSourceDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/data/Scrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/data/ScrapperSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/repository/DictionaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/src/main/java/com/gus/translations/service/DictionaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Translations/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/controller/OfferController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/data/DataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/DanePracodawcy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/PozostaleDane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/WarunkiPracyIPlacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/Wymagania.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/WymaganiaDodatkowe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/WymaganiaKonieczne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/WymaganiaPozadane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/repository/OfferRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/service/OfferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jsonToCBOPdb/src/test/java/com/gus/data/DataAccessTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test/src/com/company/Loop.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test/src/com/company/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test/src/com/company/Method.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test/src/com/company/RandomTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Settings.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CBOP_Scrapper" beforeDir="false" afterPath="$PROJECT_DIR$/../CBOP_Scrapper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HtmlParser" beforeDir="false" afterPath="$PROJECT_DIR$/../HtmlParser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JOH" beforeDir="false" afterPath="$PROJECT_DIR$/../JOH" afterDir="false" />
@@ -43,6 +70,7 @@
       <change beforePath="$PROJECT_DIR$/../KZiS" beforeDir="false" afterPath="$PROJECT_DIR$/../KZiS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../codePotatoInc-copernicana2-06e260ae8196" beforeDir="false" afterPath="$PROJECT_DIR$/../codePotatoInc-copernicana2-06e260ae8196" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../copernicana" beforeDir="false" afterPath="$PROJECT_DIR$/../copernicana" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsontodb" beforeDir="false" afterPath="$PROJECT_DIR$/../jsontodb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../motokariera-staging" beforeDir="false" afterPath="$PROJECT_DIR$/../motokariera-staging" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wordCloud" beforeDir="false" afterPath="$PROJECT_DIR$/../wordCloud" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zadania/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zadania/.idea/workspace.xml" afterDir="false" />
@@ -57,67 +85,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="114358892">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1481" />
-          <entry key="xml" value="17" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1481" />
-          <entry key="XML" value="17" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="5" />
-          <entry key="exclude" value="1" />
-          <entry key="gitignore" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="3" />
-          <entry key="txt" value="3" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="Git exclude file" value="1" />
-          <entry key="Git file" value="1" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="3" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Methods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/java/io/File.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/Offer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -132,24 +148,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../morfologik-stemmer-cli" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../wicked-charts" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="corrections" />
       </map>
     </option>
+    <option name="RECENT_COMMON_BRANCH" value="master" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/Methods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -161,10 +177,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="307" />
-    <option name="y" value="208" />
-    <option name="width" value="654" />
-    <option name="height" value="991" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,47 +188,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CBOPConnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CBOPConnector" type="462c0819:PsiDirectoryNode" />
+              <item name="CBOP-Connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBOP-Connector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CBOPConnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CBOPConnector" type="462c0819:PsiDirectoryNode" />
+              <item name="CBOP-Connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBOP-Connector" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CBOPConnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CBOPConnector" type="462c0819:PsiDirectoryNode" />
+              <item name="CBOP-Connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBOP-Connector" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CBOPConnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CBOPConnector" type="462c0819:PsiDirectoryNode" />
+              <item name="CBOP-Connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBOP-Connector" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CBOPConnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="CBOP-Connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBOP-Connector" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541661081521" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CBOP_Scrapper" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544519932037" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jsonToCBOPdb" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25115207" />
@@ -231,10 +248,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main " type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="CBOPConnector" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="CBOP-Connector" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -251,7 +267,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -261,7 +277,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main " />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +298,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,7 +308,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838188" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838188" weight="0.32756633" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -301,7 +317,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50161815" side_tool="true" weight="0.3290993" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3290993" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -310,18 +326,16 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="R Packages" order="9" />
+      <window_info anchor="right" id="R Graphics" order="10" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Corrections and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections and comments" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/java/net/InetSocketAddress.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -336,26 +350,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.m2/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CBOPConnector.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/java/util/concurrent/ScheduledExecutorService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -363,20 +361,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Methods.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Settings.java">
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -387,10 +388,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/java/io/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jsonToCBOPdb/src/main/java/com/gus/domain/Offer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -426,6 +458,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>R Skeletons</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -449,7 +482,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CBOPConnector</last-edited>
+          <last-edited>CBOP-Connector</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
